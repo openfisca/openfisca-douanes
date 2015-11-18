@@ -1,0 +1,31 @@
+digraph OpenFiscaDouanes {
+
+  label = "Architecture du projet OpenFisca douanes";
+  node [shape = box, style = rounded];
+  edge [fontsize = 10]
+
+  douanes_web_api [label = "API web douanes"];
+  mobile_app [label = "Application\nmobile"];
+  nomenclature_xml [label = "Nomenclature XML", shape = folder];
+  of_ext_douanes [label = "Extension douanes\nOpenFisca"];
+  of_france [label = "OpenFisca-France"];
+  of_web_api [label = "API web OpenFisca"];
+  web_site [label = "Site web"];
+
+  subgraph cluster_server {
+    label = "Serveur";
+    style = bold;
+    {rank=same; of_ext_douanes nomenclature_xml};
+    of_ext_douanes -> {nomenclature_xml, of_france};
+    douanes_web_api -> of_web_api [label = "WSGI"];
+    of_web_api -> of_ext_douanes;
+  }
+
+  subgraph cluster_clients {
+    edge [style = dotted];
+    label = "Clients";
+    mobile_app -> douanes_web_api;
+    web_site -> douanes_web_api [label = "HTTP request\nJSON payload"];
+  }
+
+}

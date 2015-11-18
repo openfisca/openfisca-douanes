@@ -1,14 +1,92 @@
-<svg id="mermaidChart5" xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="0 0 522.5 667" style="max-width:522.5px;"><style type="text/css" title="mermaid-svg-internal-css">/*  */
-#mermaidChart5 .node&gt;rect { ; }
-#mermaidChart5 .node text  { fill:#000; stroke:none; font-weight:300; font-family:"Helvetica Neue",Helvetica,Arial,sans-serf; font-size:14px; }
-#mermaidChart5 .edgeLabel text  { fill:#000; stroke:none; font-weight:300; font-family:"Helvetica Neue",Helvetica,Arial,sans-serf; font-size:14px; }
-#mermaidChart5 .cluster rect  { rx:4px; fill: rgb(255, 255, 222); rx: 4px; stroke: rgb(170, 170, 51); stroke-width: 1px; }
-*, ::before, ::after { box-sizing: inherit; }
-.mermaid .label { color: rgb(51, 51, 51); }
-.node rect, .node circle, .node polygon { fill: rgb(236, 236, 255); stroke: rgb(204, 204, 255); stroke-width: 1px; }
-.edgePath .path { stroke: rgb(51, 51, 51) !important; }
-.cluster rect { fill: rgb(255, 255, 222); rx: 40px; stroke: rgb(170, 170, 51); stroke-width: 1px; }
-.cluster text { fill: rgb(51, 51, 51); }
-text { font-family: 'trebuchet ms', verdana, arial; font-size: 14px; }
-/*  */
-</style><g><g class="output"><g class="clusters"><g class="cluster" id="subGraph1" transform="translate(259.5,92.5)" style="opacity: 1;"><rect width="292" height="145" x="-146" y="-72.5"></rect><g class="label"><g transform="translate(0,0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"></div></foreignObject></g></g><text x="0" y="-58.5" fill="black" stroke="none" id="mermaidChart5Text" style="text-anchor: middle;"> Clients</text></g><g class="cluster" id="subGraph0" transform="translate(251.25,432)" style="opacity: 1;"><rect width="462.5" height="390" x="-231.25" y="-195"></rect><g class="label"><g transform="translate(0,0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"></div></foreignObject></g></g><text x="0" y="-181" fill="black" stroke="none" id="mermaidChart5Text" style="text-anchor: middle;"> Server</text></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M208.20652173913044,510L152.5,535L153,560.5" marker-end="url(#arrowhead283)" style="stroke: #333; fill:none;stroke-width:2px;stroke-dasharray:3;"></path><defs><marker id="arrowhead283" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M301.79347826086956,510L357.5,535L357.5,560" marker-end="url(#arrowhead284)" style="fill:none"></path><defs><marker id="arrowhead284" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M255,304L255,340L255,376" marker-end="url(#arrowhead285)" style="fill:none"></path><defs><marker id="arrowhead285" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M255,418L255,443L255,468" marker-end="url(#arrowhead286)" style="fill:none"></path><defs><marker id="arrowhead286" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M187,131L187,165L187,201L187,237L223.95652173913044,262" marker-end="url(#arrowhead287)" style="stroke: #333; fill:none;stroke-width:2px;stroke-dasharray:3;"></path><defs><marker id="arrowhead287" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="fill: #333"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M323,140L323,165L323,201L323,237L286.04347826086956,262" marker-end="url(#arrowhead288)" style="stroke: #333; fill:none;stroke-width:2px;stroke-dasharray:3;"></path><defs><marker id="arrowhead288" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" style="fill: #333"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span style="background:#e8e8e8"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span style="background:#e8e8e8"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(255,340)" style="opacity: 1;"><g transform="translate(-18.5,-11)" class="label"><foreignObject width="50" height="22"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span style="background:#e8e8e8">WSGI</span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span style="background:#e8e8e8"></span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(187,201)" style="opacity: 1;"><g transform="translate(-46,-11)" class="label"><foreignObject width="92" height="22"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span style="background:#e8e8e8">HTTP request</span></div></foreignObject></g></g><g class="edgeLabel" transform="translate(323,201)" style="opacity: 1;"><g transform="translate(-46,-11)" class="label"><foreignObject width="92" height="22"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span style="background:#e8e8e8">HTTP request</span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="www" transform="translate(187,92.5)" style="opacity: 1;"><circle x="-38.5" y="-21" r="38.5"></circle><g class="label" transform="translate(0,0)"><g transform="translate(-28.5,-11)"><foreignObject width="57" height="22"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Site web</div></foreignObject></g></g></g><g class="node" id="mobileApp" transform="translate(323,92.5)" style="opacity: 1;"><circle x="-47.5" y="-32" r="47.5"></circle><g class="label" transform="translate(0,0)"><g transform="translate(-37.5,-22)"><foreignObject width="75" height="44"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Application<br/>mobile</div></foreignObject></g></g></g><g class="node" id="douanesWebApi" transform="translate(255,283)" style="opacity: 1;"><rect rx="5" ry="5" x="-68" y="-21" width="136" height="42"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-58,-11)"><foreignObject width="116" height="22"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">API web douanes</div></foreignObject></g></g></g><g class="node" id="nomenclatureXml" transform="translate(152.5,581)" style="opacity: 1;"><polygon points="-21,0 149,0 149,-42 -21,-42 0,-21" transform="translate(-74.5,21)"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-64.5,-11)"><foreignObject width="129" height="22"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Nomenclature XML</div></foreignObject></g></g></g><g class="node" id="ofExtDouanes" transform="translate(255,489)" style="opacity: 1;"><rect rx="5" ry="5" x="-110" y="-21" width="220" height="42"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-100,-11)"><foreignObject width="200" height="22"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">OpenFisca extension douanes</div></foreignObject></g></g></g><g class="node" id="ofFrance" transform="translate(357.5,581)" style="opacity: 1;"><rect rx="5" ry="5" x="-70" y="-21" width="140" height="42"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-60,-11)"><foreignObject width="120" height="22"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">OpenFisca-France</div></foreignObject></g></g></g><g class="node" id="ofWebApi" transform="translate(255,397)" style="opacity: 1;"><rect rx="5" ry="5" x="-74.5" y="-21" width="149" height="42"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-64.5,-11)"><foreignObject width="129" height="22"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">API web OpenFisca</div></foreignObject></g></g></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.38.0 (20140413.2041)
+ -->
+<!-- Title: OpenFiscaDouanes Pages: 1 -->
+<svg width="323pt" height="470pt"
+ viewBox="0.00 0.00 323.00 470.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 466)">
+<title>OpenFiscaDouanes</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-466 319,-466 319,4 -4,4"/>
+<text text-anchor="middle" x="157.5" y="-7.8" font-family="Times,serif" font-size="14.00">Architecture du projet OpenFisca douanes</text>
+<g id="clust1" class="cluster"><title>cluster_server</title>
+<polygon fill="none" stroke="black" stroke-width="2" points="8,-31 8,-337 307,-337 307,-31 8,-31"/>
+<text text-anchor="middle" x="157.5" y="-321.8" font-family="Times,serif" font-size="14.00">Serveur</text>
+</g>
+<g id="clust4" class="cluster"><title>cluster_clients</title>
+<polygon fill="none" stroke="black" points="17,-377 17,-454 195,-454 195,-377 17,-377"/>
+<text text-anchor="middle" x="106" y="-438.8" font-family="Times,serif" font-size="14.00">Clients</text>
+</g>
+<!-- douanes_web_api -->
+<g id="node1" class="node"><title>douanes_web_api</title>
+<path fill="none" stroke="black" d="M123.5,-306C123.5,-306 34.5,-306 34.5,-306 28.5,-306 22.5,-300 22.5,-294 22.5,-294 22.5,-282 22.5,-282 22.5,-276 28.5,-270 34.5,-270 34.5,-270 123.5,-270 123.5,-270 129.5,-270 135.5,-276 135.5,-282 135.5,-282 135.5,-294 135.5,-294 135.5,-300 129.5,-306 123.5,-306"/>
+<text text-anchor="middle" x="79" y="-284.3" font-family="Times,serif" font-size="14.00">API web douanes</text>
+</g>
+<!-- of_web_api -->
+<g id="node6" class="node"><title>of_web_api</title>
+<path fill="none" stroke="black" d="M130,-223C130,-223 28,-223 28,-223 22,-223 16,-217 16,-211 16,-211 16,-199 16,-199 16,-193 22,-187 28,-187 28,-187 130,-187 130,-187 136,-187 142,-193 142,-199 142,-199 142,-211 142,-211 142,-217 136,-223 130,-223"/>
+<text text-anchor="middle" x="79" y="-201.3" font-family="Times,serif" font-size="14.00">API web OpenFisca</text>
+</g>
+<!-- douanes_web_api&#45;&gt;of_web_api -->
+<g id="edge3" class="edge"><title>douanes_web_api&#45;&gt;of_web_api</title>
+<path fill="none" stroke="black" d="M79,-269.822C79,-259.19 79,-245.306 79,-233.204"/>
+<polygon fill="black" stroke="black" points="82.5001,-233.153 79,-223.153 75.5001,-233.153 82.5001,-233.153"/>
+<text text-anchor="middle" x="92" y="-244" font-family="Times,serif" font-size="10.00">WSGI</text>
+</g>
+<!-- mobile_app -->
+<g id="node2" class="node"><title>mobile_app</title>
+<path fill="none" stroke="black" d="M93,-423C93,-423 37,-423 37,-423 31,-423 25,-417 25,-411 25,-411 25,-397 25,-397 25,-391 31,-385 37,-385 37,-385 93,-385 93,-385 99,-385 105,-391 105,-397 105,-397 105,-411 105,-411 105,-417 99,-423 93,-423"/>
+<text text-anchor="middle" x="65" y="-407.8" font-family="Times,serif" font-size="14.00">Application</text>
+<text text-anchor="middle" x="65" y="-392.8" font-family="Times,serif" font-size="14.00">mobile</text>
+</g>
+<!-- mobile_app&#45;&gt;douanes_web_api -->
+<g id="edge5" class="edge"><title>mobile_app&#45;&gt;douanes_web_api</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M67.2183,-384.936C69.4873,-366.46 73.0402,-337.53 75.6515,-316.266"/>
+<polygon fill="black" stroke="black" points="79.1386,-316.585 76.8837,-306.233 72.1908,-315.732 79.1386,-316.585"/>
+</g>
+<!-- nomenclature_xml -->
+<g id="node3" class="node"><title>nomenclature_xml</title>
+<polygon fill="none" stroke="black" points="299,-149 296,-153 275,-153 272,-149 171,-149 171,-113 299,-113 299,-149"/>
+<text text-anchor="middle" x="235" y="-127.3" font-family="Times,serif" font-size="14.00">Nomenclature XML</text>
+</g>
+<!-- of_ext_douanes -->
+<g id="node4" class="node"><title>of_ext_douanes</title>
+<path fill="none" stroke="black" d="M123.5,-150C123.5,-150 28.5,-150 28.5,-150 22.5,-150 16.5,-144 16.5,-138 16.5,-138 16.5,-124 16.5,-124 16.5,-118 22.5,-112 28.5,-112 28.5,-112 123.5,-112 123.5,-112 129.5,-112 135.5,-118 135.5,-124 135.5,-124 135.5,-138 135.5,-138 135.5,-144 129.5,-150 123.5,-150"/>
+<text text-anchor="middle" x="76" y="-134.8" font-family="Times,serif" font-size="14.00">Extension douanes</text>
+<text text-anchor="middle" x="76" y="-119.8" font-family="Times,serif" font-size="14.00">OpenFisca</text>
+</g>
+<!-- of_ext_douanes&#45;&gt;nomenclature_xml -->
+<g id="edge1" class="edge"><title>of_ext_douanes&#45;&gt;nomenclature_xml</title>
+<path fill="none" stroke="black" d="M135.625,-131C143.996,-131 152.367,-131 160.739,-131"/>
+<polygon fill="black" stroke="black" points="160.95,-134.5 170.95,-131 160.95,-127.5 160.95,-134.5"/>
+</g>
+<!-- of_france -->
+<g id="node5" class="node"><title>of_france</title>
+<path fill="none" stroke="black" d="M122,-75C122,-75 30,-75 30,-75 24,-75 18,-69 18,-63 18,-63 18,-51 18,-51 18,-45 24,-39 30,-39 30,-39 122,-39 122,-39 128,-39 134,-45 134,-51 134,-51 134,-63 134,-63 134,-69 128,-75 122,-75"/>
+<text text-anchor="middle" x="76" y="-53.3" font-family="Times,serif" font-size="14.00">OpenFisca&#45;France</text>
+</g>
+<!-- of_ext_douanes&#45;&gt;of_france -->
+<g id="edge2" class="edge"><title>of_ext_douanes&#45;&gt;of_france</title>
+<path fill="none" stroke="black" d="M76,-111.831C76,-103.894 76,-94.4095 76,-85.6285"/>
+<polygon fill="black" stroke="black" points="79.5001,-85.4177 76,-75.4177 72.5001,-85.4177 79.5001,-85.4177"/>
+</g>
+<!-- of_web_api&#45;&gt;of_ext_douanes -->
+<g id="edge4" class="edge"><title>of_web_api&#45;&gt;of_ext_douanes</title>
+<path fill="none" stroke="black" d="M78.289,-186.937C77.9578,-178.987 77.5547,-169.313 77.1797,-160.313"/>
+<polygon fill="black" stroke="black" points="80.6717,-160.045 76.7583,-150.199 73.6777,-160.336 80.6717,-160.045"/>
+</g>
+<!-- web_site -->
+<g id="node7" class="node"><title>web_site</title>
+<path fill="none" stroke="black" d="M175,-422C175,-422 135,-422 135,-422 129,-422 123,-416 123,-410 123,-410 123,-398 123,-398 123,-392 129,-386 135,-386 135,-386 175,-386 175,-386 181,-386 187,-392 187,-398 187,-398 187,-410 187,-410 187,-416 181,-422 175,-422"/>
+<text text-anchor="middle" x="155" y="-400.3" font-family="Times,serif" font-size="14.00">Site web</text>
+</g>
+<!-- web_site&#45;&gt;douanes_web_api -->
+<g id="edge6" class="edge"><title>web_site&#45;&gt;douanes_web_api</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M143.457,-385.686C130.829,-366.744 110.463,-336.195 96.0059,-314.509"/>
+<polygon fill="black" stroke="black" points="98.8616,-312.483 90.4024,-306.104 93.0372,-316.366 98.8616,-312.483"/>
+<text text-anchor="middle" x="160" y="-359" font-family="Times,serif" font-size="10.00">HTTP request</text>
+<text text-anchor="middle" x="160" y="-348" font-family="Times,serif" font-size="10.00">JSON payload</text>
+</g>
+</g>
+</svg>
