@@ -4,12 +4,17 @@ digraph OpenFiscaDouanes {
   node [shape = box, style = rounded];
   edge [fontsize = 10]
 
+  subgraph OpenFisca {
+    node [fillcolor = lightgray, style = "rounded,filled"];
+    of_web_api [label = "API web OpenFisca"];
+    of_france [label = "OpenFisca-France"];
+    of_core [label = "OpenFisca-Core"];
+  }
+
   douanes_web_api [label = "API web douanes"];
   mobile_app [label = "Application\nmobile"];
   nomenclature_xml [label = "Nomenclature XML", shape = folder];
   of_ext_douanes [label = "Extension douanes\nOpenFisca"];
-  of_france [label = "OpenFisca-France"];
-  of_web_api [label = "API web OpenFisca"];
   web_site [label = "Site web"];
 
   subgraph cluster_server {
@@ -19,6 +24,7 @@ digraph OpenFiscaDouanes {
     of_ext_douanes -> {nomenclature_xml, of_france};
     douanes_web_api -> of_web_api [label = "WSGI"];
     of_web_api -> of_ext_douanes;
+    of_france -> of_core;
   }
 
   subgraph cluster_clients {
@@ -27,5 +33,4 @@ digraph OpenFiscaDouanes {
     mobile_app -> douanes_web_api;
     web_site -> douanes_web_api [label = "HTTP request\nJSON payload"];
   }
-
 }
