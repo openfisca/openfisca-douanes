@@ -20,7 +20,7 @@ digraph OpenFiscaDouanes {
   subgraph cluster_server {
     label = "Serveur";
     style = bold;
-    {rank=same; of_ext_douanes nomenclature_xml};
+    {rank = same; of_ext_douanes nomenclature_xml};
     of_ext_douanes -> {nomenclature_xml, of_france};
     douanes_web_api -> of_web_api [label = "WSGI"];
     of_web_api -> of_ext_douanes;
