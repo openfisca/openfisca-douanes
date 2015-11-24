@@ -9,4 +9,7 @@ all: $(SVG_FILES)
 clean:
 	rm -f $(SVG_FILES)
 
-.PHONY: clean
+download_pad:
+	wget https://bimestriel.framapad.org/p/openfisca-douanes/export/markdown -O notes/openfisca-douanes-pad-backup.md
+
+.PHONY: clean download_pad
