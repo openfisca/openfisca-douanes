@@ -1,8 +1,40 @@
-#OpenFisca Douanes
+OpenFisca Douanes
+
+Profil à déterminer
+
+Prochaines étapes du projet
+
 
 Questions / réponses entre les équipes
 
-##Accès aux données
+# RITA
+
+nomenclature basée sur le code TARIC (?) 10 chiffres
+
+calculs exacts
+
+pas de fichier à plat de lien entre nomenclatures et tarifs
+
+RITA calcule à toute date du moment que la législation est entrée
+
+Code de type de service
+DAU déclaration produit
+DSD prohibitions
+TIP produits pétroliers
+TAX pas de prohibition / restritction, juste les taxes
+
+
+Service Delta
+
+Droits anti-dumping en fonction du produit et de la provenance
+
+Flux des changements de la nomenclature
+
+# Glossaire
+
+mesuresTec = Taux Exterieur Commun
+
+# Accès aux données
 
 Les données sont importées dans OpenFisca.
 
