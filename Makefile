@@ -6,10 +6,15 @@ all: $(SVG_FILES)
 %.svg : %.dot
 	dot -Tsvg -o $@ $<
 
-clean:
+clean: clean-pyc clean-svg
+
+clean-pyc:
+	find . -name '*.pyc' -exec rm \{\} \;
+
+clean-svg:
 	rm -f $(SVG_FILES)
 
 download_pad:
 	wget https://bimestriel.framapad.org/p/openfisca-douanes/export/markdown -O notes/openfisca-douanes-pad-backup.md
 
-.PHONY: clean download_pad
+.PHONY: clean clean-pyc clean-svg download_pad
