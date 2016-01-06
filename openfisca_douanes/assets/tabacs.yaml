@@ -1,0 +1,243 @@
+# Andorre
+
+-
+  input_variables:
+    # Cigarillos
+    douanes_code_produit: '2402100000'
+    douanes_quantite_produit: '<= 150'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: 0
+    droits_douane_rate_max: 0
+    tva: 0
+-
+  input_variables:
+    # Cigarillos
+    douanes_code_produit: '2402100000'
+    douanes_quantite_produit: '> 150'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    droits_douane_rate_max: 0.26
+    tva: 0.20
+-
+  input_variables:
+    # Cigarettes
+    douanes_code_produit: '2402209000' # or 2402209000?
+    douanes_quantite_produit: '<= 300'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: 0
+    droits_douane_rate_max: 0
+    tva: 0
+-
+  input_variables:
+    # Cigarettes
+    douanes_code_produit: '2402209000' # or 2402209000?
+    douanes_quantite_produit: '> 300'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    droits_douane_rate_max: 0.576
+    tva: 0.20
+-
+  input_variables:
+    # Tabac à fumer
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '<= 400'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: 0
+    droits_douane_rate_max: 0
+    tva: 0
+-
+  input_variables:
+    # Tabac à fumer
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '> 400'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    droits_douane_rate_max: 0.749
+    tva: 0.20
+-
+  input_variables:
+    # Cigare
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '<= 75'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: 0
+    droits_douane_rate_max: 0
+    tva: 0
+-
+  input_variables:
+    # Cigare
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '> 75'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    droits_douane_rate_max: 0.26
+    tva: 0.20
+
+
+# Hors EU
+
+-
+  input_variables:
+    # Cigarillos
+    douanes_code_produit: '2402100000'
+    douanes_quantite_produit: '<= 100'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: 0
+    droits_douane_rate_max: 0
+    tva: 0
+-
+  input_variables:
+    # Cigarillos
+    douanes_code_produit: '2402100000'
+    douanes_quantite_produit: '> 100'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    droits_douane_rate_max: 0.26
+    tva: 0.20
+-
+  input_variables:
+    # Cigarettes
+    douanes_code_produit: '2402209000' # or 2402209000?
+    douanes_quantite_produit: '<= 200'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: 0
+    droits_douane_rate_max: 0
+    tva: 0
+-
+  input_variables:
+    # Cigarettes
+    douanes_code_produit: '2402209000' # or 2402209000?
+    douanes_quantite_produit: '> 200'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    droits_douane_rate_max: 0.576
+    tva: 0.20
+-
+  input_variables:
+    # Tabac à fumer
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '<= 250'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: 0
+    droits_douane_rate_max: 0
+    tva: 0
+-
+  input_variables:
+    # Tabac à fumer
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '> 250'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    droits_douane_rate_max: 0.749
+    tva: 0.20
+-
+  input_variables:
+    # Cigare
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '<= 50'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: 0
+    droits_douane_rate_max: 0
+    tva: 0
+-
+  input_variables:
+    # Cigare
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '> 50'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_consommation: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    droits_douane_rate_max: 0.26
+    tva: 0.20
+
+
+
+# EU
+
+-
+  input_variables:
+    # Cigarillos
+    douanes_code_produit: '2402100000'
+    douanes_quantite_produit: '<= 400'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_specifiques: 0
+    tva: 0
+-
+  input_variables:
+    # Cigarillos
+    douanes_code_produit: '2402100000'
+    douanes_quantite_produit: '> 400'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_specifiques: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    tva: 0.20
+-
+  input_variables:
+    # Cigarettes
+    douanes_code_produit: '2402209000' # or 2402209000?
+    douanes_quantite_produit: '<= 800'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_specifiques: 0
+    tva: 0
+-
+  input_variables:
+    # Cigarettes
+    douanes_code_produit: '2402209000' # or 2402209000?
+    douanes_quantite_produit: '> 800'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_specifiques: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    tva: 0.20
+-
+  input_variables:
+    # Tabac à fumer
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '<= 1'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_specifiques: 0
+    tva: 0
+-
+  input_variables:
+    # Tabac à fumer
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '> 1'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_specifiques: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    tva: 0.20
+-
+  input_variables:
+    # Cigare
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '<= 200'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_specifiques: 0
+    tva: 0
+-
+  input_variables:
+    # Cigare
+    douanes_code_produit: '' # TODO
+    douanes_quantite_produit: '> 200'
+    douanes_zone_provenance_produit: 0 # Andorra
+  output_variables:
+    droits_specifiques: -1 # FIXME -1 is for unknown value; find more elegant way to handle unknown values.
+    tva: 0.20

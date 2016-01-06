@@ -17,4 +17,7 @@ clean-svg:
 download_pad:
 	wget https://bimestriel.framapad.org/p/openfisca-douanes/export/markdown -O notes/openfisca-douanes-pad-backup.md
 
-.PHONY: clean clean-pyc clean-svg download_pad
+test:
+	nosetests -x openfisca_douanes/tests
+
+.PHONY: clean clean-pyc clean-svg download_pad test

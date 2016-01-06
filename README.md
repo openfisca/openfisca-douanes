@@ -6,6 +6,15 @@ Simulateur ouvert de taxes de douanes - en développement
 
 ![Project architecture](https://cdn.rawgit.com/openfisca/openfisca-douanes/master/notes/architecture.svg)
 
+## Run tests
+
+```
+make test
+
+# or more verbose:
+python openfisca_douanes/tests/test_yaml.py -v
+```
+
 ## Generate diagram
 
 To build file.svg from file.dot, run in your shell:
