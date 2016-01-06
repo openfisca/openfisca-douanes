@@ -2,8 +2,10 @@
 
 import os
 
-from openfisca_core import columns, enumerations, reforms
-from openfisca_france import entities
+from openfisca_core import reforms
+from openfisca_core.columns import EnumCol, FloatCol, IntCol, StrCol
+from openfisca_core.enumerations import Enum
+from openfisca_france.entities import Individus
 import numpy as np
 import yaml
 
@@ -87,37 +89,37 @@ def build_reform(tax_benefit_system):
     # Input variables
 
     class douanes_zone_provenance_produit(Reform.Variable):
-        column = columns.EnumCol(enum = enumerations.Enum([u'Andorra', u'non_UE', u'UE']))
-        entity_class = entities.Individus
+        column = EnumCol(enum = Enum([u'Andorra', u'non_UE', u'UE']))
+        entity_class = Individus
         label = u'Zone de provenance du produit importé'
 
     class douanes_code_produit(Reform.Variable):
-        column = columns.StrCol
-        entity_class = entities.Individus
+        column = StrCol
+        entity_class = Individus
         label = u'Code du produit importé suivant la nomenclature des douanes'
 
     class douanes_quantite_produit(Reform.Variable):
-        column = columns.IntCol
-        entity_class = entities.Individus
+        column = IntCol
+        entity_class = Individus
         label = u'Quantité du produit importé'
 
     # Variables with formulas
 
     class taux_droits_douane_max(Reform.Variable):
-        column = columns.FloatCol
-        entity_class = entities.Individus
+        column = FloatCol
+        entity_class = Individus
         function = yaml_tree_variable_function
         label = u'Taux de droits de douane sur un produit importé'
 
     class droits_consommation(Reform.Variable):
-        column = columns.FloatCol
-        entity_class = entities.Individus
+        column = FloatCol
+        entity_class = Individus
         function = yaml_tree_variable_function
         label = u'Taux de droits de consommation sur un produit importé'
 
     class tva(Reform.Variable):
-        column = columns.FloatCol
-        entity_class = entities.Individus
+        column = FloatCol
+        entity_class = Individus
         function = yaml_tree_variable_function
         label = u'Taux de TVA sur un produit importé'
 
