@@ -10,9 +10,6 @@ import yaml
 
 source_file_dir_name = os.path.dirname(os.path.abspath(__file__))
 tabacs_yaml_file_path = os.path.join(source_file_dir_name, 'assets', 'tabacs.yaml')
-with open(tabacs_yaml_file_path, 'r') as tabacs_yaml_file:
-    tabacs_input_variables_and_values_list = yaml.load(tabacs_yaml_file)
-# TODO Write a validator.
 
 
 # Functions for expressions
@@ -78,6 +75,10 @@ def build_reform(tax_benefit_system):
         name = u'Droits de douane, droits de consommation et TVA',
         reference = tax_benefit_system,
         )
+
+    with open(tabacs_yaml_file_path, 'r') as tabacs_yaml_file:
+        tabacs_input_variables_and_values_list = yaml.load(tabacs_yaml_file)
+    # TODO Write a validator.
 
     class douanes_zone_provenance_produit(Reform.Variable):
         column = columns.EnumCol(enum = enumerations.Enum([u'Andorra', u'non_UE', u'UE']))
