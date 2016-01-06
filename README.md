@@ -13,6 +13,9 @@ make test
 
 # or more verbose:
 python openfisca_douanes/tests/test_yaml.py -v
+
+# to enter ipdb debugger when an exception is raised:
+nosetests openfisca_douanes/tests/test_yaml.py --ipdb
 ```
 
 ## Generate diagram
