@@ -17,10 +17,10 @@ tabacs_yaml_file_path = os.path.join(source_file_dir_name, 'assets', 'tabacs.yam
 # Functions for expressions
 
 
-def apply_operator(yaml_input_variable, input_variable):
+def apply_operator(input_variable_value, condition_expression):
     # TODO Move this treatment in a Biryani validator when parsing the YAML file.
-    operator, yaml_value = extract_operator_and_value(yaml_input_variable)
-    return operator(input_variable, yaml_value)
+    operator, expected_value = extract_operator_and_value(condition_expression)
+    return operator(input_variable_value, expected_value)
 
 
 def extract_operator_and_value(value):
@@ -43,24 +43,17 @@ def extract_operator_and_value(value):
 # Functions for conditions matching
 
 
-def match_conditions(yaml_variables_list, simulation, period):
-    for yaml_variables in yaml_variables_list:
-        yaml_input_variable_by_name = yaml_variables['input_variables']
-        yaml_input_variables_name = sorted(yaml_input_variable_by_name)
-        yaml_input_variables = [
-            yaml_input_variable_by_name[yaml_input_variable_name]
-            for yaml_input_variable_name in yaml_input_variables_name
-            ]
-        input_variables = [
-            simulation.calculate(yaml_input_variable_name, period)
-            for yaml_input_variable_name in yaml_input_variables_name
-            ]
-        conditions = (
-            apply_operator(yaml_input_variable, input_variable)
-            for input_variable, yaml_input_variable in zip(input_variables, yaml_input_variables)
+def match_conditions(yaml_block, simulation, period):
+    for yaml_block in yaml_block:
+        conditions_match = all(
+            apply_operator(
+                simulation.calculate(variable_name, period),
+                condition_expression,
+                )
+            for variable_name, condition_expression in yaml_block['conditions'].iteritems()
             )
-        if all(conditions):
-            return yaml_variables
+        if conditions_match:
+            return yaml_block
     return None
 
 
@@ -75,13 +68,13 @@ def build_reform(tax_benefit_system):
         )
 
     with open(tabacs_yaml_file_path, 'r') as tabacs_yaml_file:
-        tabacs_yaml_variables_list = yaml.load(tabacs_yaml_file)
-    yaml_variables_list = tabacs_yaml_variables_list
+        tabacs_yaml_block = yaml.load(tabacs_yaml_file)
+    yaml_block = tabacs_yaml_block
     # TODO Write a validator.
 
     def yaml_tree_variable_function(self, simulation, period):
-        match = match_conditions(yaml_variables_list, simulation, period)
-        result = self.zeros() + match['output_variables'][self.__class__.__name__] \
+        match = match_conditions(yaml_block, simulation, period)
+        result = self.zeros() + match['results'][self.__class__.__name__] \
             if match is not None \
             else self.zeros()
         return period, result
