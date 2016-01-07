@@ -5,11 +5,6 @@
     droits_consommation: 0
     taux_droits_douane_max: 0
     tva: 0
-
-
-# Hors UE
-
-
 -
   conditions:
     age: "< 15"
