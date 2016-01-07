@@ -1,0 +1,42 @@
+-
+  conditions:
+    douanes_zone_provenance_produit: "EU"
+  results:
+    droits_consommation: 0
+    taux_droits_douane_max: 0
+    tva: 0
+
+
+# Hors UE
+
+
+-
+  conditions:
+    age: "< 15"
+    douanes_zone_provenance_produit: "Andorra"
+    moyen_transport: "avion-bateau"
+    valeur_produit_importe: "<= 150"
+  results:
+    droits_consommation: 0
+    taux_droits_douane_max: 0
+    tva: 0
+-
+  conditions:
+    age: "< 15"
+    douanes_zone_provenance_produit: "Andorra"
+    moyen_transport: "avion-bateau"
+    valeur_produit_importe: "> 150 <= 700"
+  results:
+    droits_consommation: 0
+    taux_droits_douane_max: 0.025
+    tva: 0.20
+-
+  conditions:
+    age: "< 15"
+    douanes_zone_provenance_produit: "Andorra"
+    moyen_transport: "avion-bateau"
+    valeur_produit_importe: "> 700"
+  results:
+    droits_consommation: 0
+    taux_droits_douane_max: 0.17
+    tva: 0.20
