@@ -133,12 +133,6 @@
   results:
     taux_droits_douane_max: 0.17
     tva: 0.20
-
-
-
-
-
-
 -
   conditions:
     age: "< 15"
