@@ -11,26 +11,25 @@ digraph OpenFiscaDouanes {
     of_core [label = "OpenFisca-Core"];
   }
 
-  douanes_web_api [label = "API web douanes"];
   mobile_app [label = "Application\nmobile"];
-  nomenclature_xml [label = "Nomenclature XML", shape = folder];
+  organigrammes_yaml [label = "Organigrammes\nYAML", shape = folder];
+  categories_yaml [label = "Catégories de produits\nYAML", shape = folder];
   of_ext_douanes [label = "Extension douanes\nOpenFisca"];
   web_site [label = "Site web"];
 
   subgraph cluster_server {
     label = "Serveur";
     style = bold;
-    {rank = same; of_ext_douanes nomenclature_xml};
-    of_ext_douanes -> {nomenclature_xml, of_france};
-    douanes_web_api -> of_web_api [label = "WSGI"];
-    of_web_api -> of_ext_douanes;
+    {rank = same; of_ext_douanes organigrammes_yaml};
+    of_ext_douanes -> {organigrammes_yaml, categories_yaml, of_france, of_core};
+    of_web_api -> {of_ext_douanes, of_france};
     of_france -> of_core;
   }
 
   subgraph cluster_clients {
     edge [style = dotted];
     label = "Clients";
-    mobile_app -> douanes_web_api;
-    web_site -> douanes_web_api [label = "HTTP request\nJSON payload"];
+    mobile_app -> of_web_api;
+    web_site -> of_web_api [label = "HTTP request\nJSON payload"];
   }
 }
