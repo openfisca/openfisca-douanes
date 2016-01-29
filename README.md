@@ -94,3 +94,7 @@ Should output a JSON like:
   ]
 }
 ```
+
+## Example client
+
+A very minimal web client is available here: https://jsbin.com/lusime/edit?html,js,output
