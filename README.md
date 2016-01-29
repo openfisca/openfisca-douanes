@@ -2,7 +2,7 @@
 
 Simulateur ouvert de taxes de douanes - en développement
 
-![Project architecture](https://cdn.rawgit.com/openfisca/openfisca-douanes/master/notes/architecture.svg)
+![Project architecture](https://rawgit.com/openfisca/openfisca-douanes/master/notes/architecture.svg)
 
 > To rebuild the diagram, run in your shell:
 ```
