@@ -2,8 +2,8 @@
   name: 0 paquets de cigarillos
   period: "2015"
   input_variables:
-    douanes_code_produit: "2402100000"
-    douanes_quantite_produit: 0
+    code_produit: "2402100000"
+    quantite_produit: 0
   output_variables:
     droits_consommation: 0
     taux_droits_douane_max: 0
@@ -12,8 +12,8 @@
   name: 150 paquets de cigarillos
   period: "2015"
   input_variables:
-    douanes_code_produit: "2402100000"
-    douanes_quantite_produit: 150
+    code_produit: "2402100000"
+    quantite_produit: 150
   output_variables:
     droits_consommation: 0
     taux_droits_douane_max: 0
@@ -22,8 +22,8 @@
   name: 200 paquets de cigarillos
   period: "2015"
   input_variables:
-    douanes_code_produit: "2402100000"
-    douanes_quantite_produit: 200
+    code_produit: "2402100000"
+    quantite_produit: 200
   output_variables:
     droits_consommation: -1
     taux_droits_douane_max: 0.26

@@ -1,20 +1,20 @@
 -
   conditions:
-    douanes_zone_provenance_produit: "EU"
+    zone_provenance_produit: "EU"
   results:
     taux_droits_douane_max: 0
     tva: 0
 -
   conditions:
-    douanes_zone_provenance_produit: "Andorra"
+    zone_provenance_produit: "Andorra"
     age: "< 17"
     categories_produit: ["parfum", "eau-de-toilette"]
   results:
     importation_interdite: true
 -
   conditions:
-    douanes_zone_provenance_produit: "Andorra"
-    douanes_quantite_produit: "<= 75"
+    zone_provenance_produit: "Andorra"
+    quantite_produit: "<= 75"
     age: ">= 17"
     categories_produit: ["parfum"]
   results:
@@ -22,8 +22,8 @@
     tva: 0
 -
   conditions:
-    douanes_zone_provenance_produit: "Andorra"
-    douanes_quantite_produit: "> 75"
+    zone_provenance_produit: "Andorra"
+    quantite_produit: "> 75"
     age: ">= 17"
     categories_produit: ["parfum"]
   results:
@@ -31,8 +31,8 @@
     tva: 0.20
 -
   conditions:
-    douanes_zone_provenance_produit: "Andorra"
-    douanes_quantite_produit: "<= 375"
+    zone_provenance_produit: "Andorra"
+    quantite_produit: "<= 375"
     age: ">= 17"
     categories_produit: ["eau-de-toilette"]
   results:
@@ -40,8 +40,8 @@
     tva: 0
 -
   conditions:
-    douanes_zone_provenance_produit: "Andorra"
-    douanes_quantite_produit: "> 375"
+    zone_provenance_produit: "Andorra"
+    quantite_produit: "> 375"
     age: ">= 17"
     categories_produit: ["eau-de-toilette"]
   results:
@@ -49,7 +49,7 @@
     tva: 0.20
 -
   conditions:
-    douanes_zone_provenance_produit: "Andorra"
+    zone_provenance_produit: "Andorra"
     valeur_produit_importe: "<= 450"
     age: "< 15"
   results:
@@ -57,7 +57,7 @@
     tva: 0
 -
   conditions:
-    douanes_zone_provenance_produit: "Andorra"
+    zone_provenance_produit: "Andorra"
     valeur_produit_importe: "> 450"
     age: "< 15"
   results:
@@ -65,7 +65,7 @@
     tva: 0.20
 -
   conditions:
-    douanes_zone_provenance_produit: "Andorra"
+    zone_provenance_produit: "Andorra"
     valeur_produit_importe: "<= 900"
     age: ">= 15"
   results:
@@ -73,7 +73,7 @@
     tva: 0
 -
   conditions:
-    douanes_zone_provenance_produit: "Andorra"
+    zone_provenance_produit: "Andorra"
     valeur_produit_importe: "> 900"
     age: ">= 15"
   results:
@@ -82,7 +82,7 @@
 -
   conditions:
     age: "< 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["avion", "bateau"]
     valeur_produit_importe: "<= 150"
   results:
@@ -91,7 +91,7 @@
 -
   conditions:
     age: "< 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["avion", "bateau"]
     valeur_produit_importe: "> 150 <= 700"
   results:
@@ -100,7 +100,7 @@
 -
   conditions:
     age: "< 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["avion", "bateau"]
     valeur_produit_importe: "> 700"
   results:
@@ -109,7 +109,7 @@
 -
   conditions:
     age: ">= 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["avion", "bateau"]
     valeur_produit_importe: "<= 430"
   results:
@@ -118,7 +118,7 @@
 -
   conditions:
     age: ">= 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["avion", "bateau"]
     valeur_produit_importe: "> 430 <= 700"
   results:
@@ -127,7 +127,7 @@
 -
   conditions:
     age: ">= 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["avion", "bateau"]
     valeur_produit_importe: "> 700"
   results:
@@ -136,7 +136,7 @@
 -
   conditions:
     age: "< 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["train", "route"]
     valeur_produit_importe: "<= 150"
   results:
@@ -145,7 +145,7 @@
 -
   conditions:
     age: "< 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["train", "route"]
     valeur_produit_importe: "> 150 <= 700"
   results:
@@ -154,7 +154,7 @@
 -
   conditions:
     age: "< 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["train", "route"]
     valeur_produit_importe: "> 700"
   results:
@@ -163,7 +163,7 @@
 -
   conditions:
     age: ">= 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["train", "route"]
     valeur_produit_importe: "<= 300"
   results:
@@ -172,7 +172,7 @@
 -
   conditions:
     age: ">= 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["train", "route"]
     valeur_produit_importe: "> 300 <= 700"
   results:
@@ -181,7 +181,7 @@
 -
   conditions:
     age: ">= 15"
-    douanes_zone_provenance_produit: "non_EU"
+    zone_provenance_produit: "non_EU"
     moyens_transport: ["train", "route"]
     valeur_produit_importe: "> 700"
   results:

@@ -1,4 +1,4 @@
 -
   conditions:
-    douanes_zone_provenance_produit: "EU"
+    zone_provenance_produit: "EU"
   results:

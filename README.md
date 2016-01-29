@@ -59,9 +59,9 @@ Should output a JSON like:
       {
         "period": "2015",
         "input_variables": {
-          "douanes_zone_provenance_produit": 0,
-          "douanes_code_produit": "2402100000",
-          "douanes_quantite_produit": 200
+          "zone_provenance_produit": 0,
+          "code_produit": "2402100000",
+          "quantite_produit": 200
         }
       }
     ],

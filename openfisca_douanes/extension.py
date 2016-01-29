@@ -53,17 +53,17 @@ def build_reform(tax_benefit_system):
 
     # Input variables
 
-    class douanes_zone_provenance_produit(Reform.Variable):
+    class zone_provenance_produit(Reform.Variable):
         column = EnumCol(enum = Enum([u'Andorra', u'non_EU', u'EU']))
         entity_class = Individus
         label = u'Zone de provenance du produit importé'
 
-    class douanes_code_produit(Reform.Variable):
+    class code_produit(Reform.Variable):
         column = StrCol
         entity_class = Individus
         label = u'Code du produit importé suivant la nomenclature des douanes'
 
-    class douanes_quantite_produit(Reform.Variable):
+    class quantite_produit(Reform.Variable):
         column = IntCol
         entity_class = Individus
         label = u'Quantité du produit importé'
