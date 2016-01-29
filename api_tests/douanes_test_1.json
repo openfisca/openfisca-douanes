@@ -3,40 +3,14 @@
   "scenarios": [
     {
       "period": "2015",
-      "test_case": {
-        "familles": [
-          {
-            "id": "c2c51785-6cfb-4136-af3f-9887c8a904f4",
-            "parents": [
-              0
-            ]
-          }
-        ],
-        "foyers_fiscaux": [
-          {
-            "id": "5695d98d-bd34-4c7b-87b7-3eac61142d3b",
-            "declarants": [
-              0
-            ]
-          }
-        ],
-        "individus": [
-          {
-            "id": 0,
-            "douanes_zone_provenance_produit": 0,
-            "douanes_code_produit": "2402100000",
-            "douanes_quantite_produit": 200
-          }
-        ],
-        "menages": [
-          {
-            "id": "41eb3863-5792-4c0c-aedf-76d6a512190d",
-            "personne_de_reference": 0
-          }
-        ]
+      "input_variables": {
+        "douanes_zone_provenance_produit": 0,
+        "douanes_code_produit": "2402100000",
+        "douanes_quantite_produit": 200
       }
     }
   ],
+  "output_format": "variables",
   "variables": [
     "droits_consommation",
     "taux_droits_douane_max",
