@@ -27,7 +27,7 @@ source_file_dir_name = os.path.dirname(os.path.abspath(__file__))
 france_tax_benefit_system = openfisca_france.init_tax_benefit_system()
 tax_benefit_system = extension.build_reform(france_tax_benefit_system)
 
-default_absolute_error_margin = 0.005,
+default_absolute_error_margin = 0.005
 
 
 # YAML configuration
