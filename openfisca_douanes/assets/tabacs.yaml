@@ -148,7 +148,9 @@
     quantite_produit: "<= 400"
     zone_provenance_produit: "EU"
   results:
+    droits_consommation: 0
     droits_specifiques: 0
+    taux_droits_douane_max: 0
     tva: 0
 -
   conditions:
@@ -164,7 +166,9 @@
     quantite_produit: "<= 800"
     zone_provenance_produit: "EU"
   results:
+    droits_consommation: 0
     droits_specifiques: 0
+    taux_droits_douane_max: 0
     tva: 0
 -
   conditions:
@@ -180,7 +184,9 @@
     quantite_produit: "<= 1"
     zone_provenance_produit: "EU"
   results:
+    droits_consommation: 0
     droits_specifiques: 0
+    taux_droits_douane_max: 0
     tva: 0
 -
   conditions:
@@ -196,7 +202,9 @@
     quantite_produit: "<= 200"
     zone_provenance_produit: "EU"
   results:
+    droits_consommation: 0
     droits_specifiques: 0
+    taux_droits_douane_max: 0
     tva: 0
 -
   conditions:
