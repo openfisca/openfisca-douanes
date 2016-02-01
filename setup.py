@@ -35,8 +35,8 @@ setup(
 
     install_requires = [
         'numpy >= 1.6',
-        'OpenFisca-Core >= 0.5.2',
-        'OpenFisca-France >= 0.5.3',
+        'OpenFisca-Core >= 0.5.3.dev0',
+        'OpenFisca-France >= 0.5.4.dev0',
         ],
     packages = find_packages(),
     zip_safe = False,
