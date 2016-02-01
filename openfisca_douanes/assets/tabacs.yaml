@@ -36,7 +36,7 @@
     tva: 0.20
 -
   conditions:
-    code_produit: "" # TODO # Tabac à fumer
+    code_produit: "TODO" # Tabac à fumer
     quantite_produit: "<= 400"
     zone_provenance_produit: "Andorra"
   results:
@@ -45,7 +45,7 @@
     tva: 0
 -
   conditions:
-    code_produit: "" # TODO # Tabac à fumer
+    code_produit: "TODO" # Tabac à fumer
     quantite_produit: "> 400"
     zone_provenance_produit: "Andorra"
   results:
@@ -54,7 +54,7 @@
     tva: 0.20
 -
   conditions:
-    code_produit: "" # TODO # Cigare
+    code_produit: "TODO" # Cigare
     quantite_produit: "<= 75"
     zone_provenance_produit: "Andorra"
   results:
@@ -63,7 +63,7 @@
     tva: 0
 -
   conditions:
-    code_produit: "" # TODO # Cigare
+    code_produit: "TODO" # Cigare
     quantite_produit: "> 75"
     zone_provenance_produit: "Andorra"
   results:
@@ -108,7 +108,7 @@
     tva: 0.20
 -
   conditions:
-    code_produit: "" # TODO # Tabac à fumer
+    code_produit: "TODO" # Tabac à fumer
     quantite_produit: "<= 250"
     zone_provenance_produit: "non_EU"
   results:
@@ -117,7 +117,7 @@
     tva: 0
 -
   conditions:
-    code_produit: "" # TODO # Tabac à fumer
+    code_produit: "TODO" # Tabac à fumer
     quantite_produit: "> 250"
     zone_provenance_produit: "non_EU"
   results:
@@ -126,7 +126,7 @@
     tva: 0.20
 -
   conditions:
-    code_produit: "" # TODO # Cigare
+    code_produit: "TODO" # Cigare
     quantite_produit: "<= 50"
     zone_provenance_produit: "non_EU"
   results:
@@ -135,7 +135,7 @@
     tva: 0
 -
   conditions:
-    code_produit: "" # TODO # Cigare
+    code_produit: "TODO" # Cigare
     quantite_produit: "> 50"
     zone_provenance_produit: "non_EU"
   results:
@@ -176,7 +176,7 @@
     tva: 0.20
 -
   conditions:
-    code_produit: "" # TODO # Tabac à fumer
+    code_produit: "TODO" # Tabac à fumer
     quantite_produit: "<= 1"
     zone_provenance_produit: "EU"
   results:
@@ -184,7 +184,7 @@
     tva: 0
 -
   conditions:
-    code_produit: "" # TODO # Tabac à fumer
+    code_produit: "TODO" # Tabac à fumer
     quantite_produit: "> 1"
     zone_provenance_produit: "EU"
   results:
@@ -192,7 +192,7 @@
     tva: 0.20
 -
   conditions:
-    code_produit: "" # TODO # Cigare
+    code_produit: "TODO" # Cigare
     quantite_produit: "<= 200"
     zone_provenance_produit: "EU"
   results:
@@ -200,7 +200,7 @@
     tva: 0
 -
   conditions:
-    code_produit: "" # TODO # Cigare
+    code_produit: "TODO" # Cigare
     quantite_produit: "> 200"
     zone_provenance_produit: "EU"
   results:
