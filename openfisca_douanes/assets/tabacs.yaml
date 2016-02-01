@@ -18,7 +18,7 @@
     tva: 0.20
 -
   conditions:
-    code_produit: "2402209000" # or 2402209000? # Cigarettes
+    code_produit: "2402209000" # Cigarettes
     quantite_produit: "<= 300"
     zone_provenance_produit: "Andorra"
   results:
@@ -27,7 +27,7 @@
     tva: 0
 -
   conditions:
-    code_produit: "2402209000" # or 2402209000? # Cigarettes
+    code_produit: "2402209000" # Cigarettes
     quantite_produit: "> 300"
     zone_provenance_produit: "Andorra"
   results:
@@ -90,7 +90,7 @@
     tva: 0.20
 -
   conditions:
-    code_produit: "2402209000" # or 2402209000? # Cigarettes
+    code_produit: "2402209000" # Cigarettes
     quantite_produit: "<= 200"
     zone_provenance_produit: "non_EU"
   results:
@@ -99,7 +99,7 @@
     tva: 0
 -
   conditions:
-    code_produit: "2402209000" # or 2402209000? # Cigarettes
+    code_produit: "2402209000" # Cigarettes
     quantite_produit: "> 200"
     zone_provenance_produit: "non_EU"
   results:
@@ -160,7 +160,7 @@
     tva: 0.20
 -
   conditions:
-    code_produit: "2402209000" # or 2402209000? # Cigarettes
+    code_produit: "2402209000" # Cigarettes
     quantite_produit: "<= 800"
     zone_provenance_produit: "EU"
   results:
@@ -168,7 +168,7 @@
     tva: 0
 -
   conditions:
-    code_produit: "2402209000" # or 2402209000? # Cigarettes
+    code_produit: "2402209000" # Cigarettes
     quantite_produit: "> 800"
     zone_provenance_produit: "EU"
   results:
