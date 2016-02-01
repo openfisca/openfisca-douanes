@@ -1,5 +1,7 @@
 # OpenFisca douanes
 
+[![Build Status](https://travis-ci.org/openfisca/openfisca-douanes.svg?branch=master)](https://travis-ci.org/openfisca/openfisca-douanes)
+
 Simulateur ouvert de taxes de douanes - en développement
 
 ![Project architecture](https://rawgit.com/openfisca/openfisca-douanes/master/notes/architecture.svg)
