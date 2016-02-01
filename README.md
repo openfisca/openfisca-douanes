@@ -4,48 +4,26 @@ Simulateur ouvert de taxes de douanes - en développement
 
 ![Project architecture](https://rawgit.com/openfisca/openfisca-douanes/master/notes/architecture.svg)
 
-> To rebuild the diagram, run in your shell:
+> Memento pour reconstruire le diagramme :
 ```
 make notes/architecture.svg
 ```
 
-## Run tests locally
+## Client de démo
 
-To run tests on your development machine:
+Un client de démonstration volontairement minimal est disponible ici : http://output.jsbin.com/lusime
 
-```
-make test
+> Son code source est [ici](http://jsbin.com/lusime/edit)
 
-# or more verbose:
-python openfisca_douanes/tests/test_yaml.py -v
+## Tester avec l'API Web publique d'OpenFisca
 
-# to enter ipdb debugger when an exception is raised:
-nosetests openfisca_douanes/tests/test_yaml.py --ipdb
-```
-
-## Test with the Web API locally
-
-You can host locally an instance of the [Web API](https://github.com/openfisca/openfisca-web-api) and configure it
-to load the OpenFisca-Douanes extension (this repo).
-See [documentation](http://doc.openfisca.fr/openfisca-web-api/index.html).
-
-Example with [`curl`](http://curl.haxx.se/) and [`jq`](https://stedolan.github.io/jq/) from the command line:
-
-```
-curl http://localhost:2000/api/1/calculate -X POST --data @./api_tests/douanes_test_1.json  --header 'content-type: application/json' | jq .
-```
-
-## Test with the public Web API
-
-OpenFisca web API is configured to load the OpenFisca-Douanes extension (this repo).
-
-Example with [`curl`](http://curl.haxx.se/) and [`jq`](https://stedolan.github.io/jq/) from the command line:
+Example avec [`curl`](http://curl.haxx.se/) et [`jq`](https://stedolan.github.io/jq/):
 
 ```
 curl http://api.openfisca.fr/api/1/calculate -X POST --data @./api_tests/douanes_test_1.json  --header 'content-type: application/json' | jq .
 ```
 
-Should output a JSON like:
+Devrait répondre un JSON de ce type :
 
 ```json
 {
@@ -95,6 +73,29 @@ Should output a JSON like:
 }
 ```
 
-## Example client
+## Exécuter les tests localement
 
-A very minimal web client is available here: https://jsbin.com/lusime/edit?html,js,output
+Sur la machine de développement :
+
+```
+make test
+
+# or more verbose:
+python openfisca_douanes/tests/test_yaml.py -v
+
+# to enter ipdb debugger when an exception is raised:
+nosetests openfisca_douanes/tests/test_yaml.py --ipdb
+```
+
+## Tester avec une instance locale de l'API Web
+
+Vous pouvez faire tourner une instance de l'[API Web](https://github.com/openfisca/openfisca-web-api) et la configurer pour charger l'extension OpenFisca-Douanes (ce repo).
+Voir la [documentation](http://doc.openfisca.fr/openfisca-web-api/index.html).
+
+Example avec [`curl`](http://curl.haxx.se/) et [`jq`](https://stedolan.github.io/jq/) :
+
+```
+curl http://localhost:2000/api/1/calculate -X POST --data @./api_tests/douanes_test_1.json  --header 'content-type: application/json' | jq .
+```
+
+Devrait répondre un JSON du même type que ci-dessus.
