@@ -4,6 +4,7 @@
   input_variables:
     code_produit: "2402100000"
     quantite_produit: 0
+    zone_provenance_produit: "Andorra"
   output_variables:
     droits_consommation: 0
     taux_droits_douane_max: 0
@@ -14,6 +15,7 @@
   input_variables:
     code_produit: "2402100000"
     quantite_produit: 150
+    zone_provenance_produit: "Andorra"
   output_variables:
     droits_consommation: 0
     taux_droits_douane_max: 0
@@ -24,6 +26,7 @@
   input_variables:
     code_produit: "2402100000"
     quantite_produit: 200
+    zone_provenance_produit: "Andorra"
   output_variables:
     droits_consommation: -1
     taux_droits_douane_max: 0.26
