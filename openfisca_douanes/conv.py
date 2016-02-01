@@ -17,7 +17,9 @@ def extract_operator_and_value(value):
         operator = operator_by_symbol[operator_str]
         value = int(value)
     else:
-        operator = np.equal
+        # Do not use np.equal here to deal with strings, np.equal returns NotImplemented with strings.
+        equal = lambda array, value: array.__eq__(value)
+        operator = equal
     return operator, value
 
 

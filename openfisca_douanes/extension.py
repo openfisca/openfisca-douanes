@@ -6,6 +6,7 @@ from openfisca_core import reforms
 from openfisca_core.columns import EnumCol, FloatCol, IntCol, StrCol
 from openfisca_core.enumerations import Enum
 from openfisca_france.entities import Individus
+import numpy as np
 import yaml
 
 from . import conv
@@ -15,17 +16,30 @@ source_file_dir_name = os.path.dirname(os.path.abspath(__file__))
 tabacs_yaml_file_path = os.path.join(source_file_dir_name, 'assets', 'tabacs.yaml')
 
 
-def match_conditions(yaml_block, simulation, period):
-    for yaml_block in yaml_block:
-        conditions_match = all(
-            operator(
-                simulation.calculate(variable_name, period),
-                value,
+def match_conditions(yaml_blocks, simulation, period):
+    for yaml_block in yaml_blocks:
+        simulation_value_by_variable_name = {
+            variable_name: np.array(  # FIXME Performance issue here but needed for dealing with Enum labels.
+                simulation.get_holder(variable_name).to_value_json(use_label = True)[str(period)]
                 )
-            for variable_name, (operator, value) in yaml_block['conditions'].iteritems()
-            )
-        if conditions_match:
+            for variable_name in yaml_block['conditions']
+            }
+        condition_tuples = [
+            (operator, simulation_value_by_variable_name[variable_name], condition_value)
+            for variable_name, (operator, condition_value) in yaml_block['conditions'].iteritems()
+            ]
+        conditions = [
+            operator(simulation_value, condition_value)
+            for operator, simulation_value, condition_value in condition_tuples
+            ]
+        # print simulation_value_by_variable_name
+        # print yaml_block['conditions']
+        # print conditions
+        assert NotImplemented not in conditions, (conditions, condition_tuples)
+        if all(conditions):
+            # print '===== match', yaml_block
             return yaml_block
+    # print '---- no match'
     return None
 
 
