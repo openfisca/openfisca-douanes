@@ -4,18 +4,13 @@
 
 Simulateur ouvert de taxes de douanes - en développement
 
+
 ![Project architecture](https://rawgit.com/openfisca/openfisca-douanes/master/notes/architecture.svg)
 
-> Memento pour reconstruire le diagramme :
+> Pour reconstruire le diagramme :
 ```
 make notes/architecture.svg
 ```
-
-## Client de démo
-
-Un client de démonstration volontairement minimal est disponible ici : http://output.jsbin.com/lusime
-
-> Son code source est [ici](http://jsbin.com/lusime/edit)
 
 ## Tester avec l'API Web publique d'OpenFisca
 
