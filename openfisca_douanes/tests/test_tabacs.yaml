@@ -31,3 +31,14 @@
     droits_consommation: -1
     taux_droits_douane_max: 0.26
     tva: 0.20
+-
+  name: 200 paquets de cigarillos depuis l'EU
+  period: "2015"
+  input_variables:
+    code_produit: "2402100000"
+    quantite_produit: 200
+    zone_provenance_produit: "EU"
+  output_variables:
+    droits_consommation: 0
+    taux_droits_douane_max: 0
+    tva: 0
