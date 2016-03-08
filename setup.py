@@ -34,6 +34,7 @@ setup(
     url = 'https://github.com/openfisca/openfisca-douanes',
 
     install_requires = [
+        'boolexp',
         'numpy >= 1.6',
         'OpenFisca-Core >= 0.5.3.dev0',
         'OpenFisca-France >= 0.5.4.dev0',

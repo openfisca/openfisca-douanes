@@ -1,39 +1,70 @@
 import numbers
 
 from biryani.baseconv import *  # noqa
-import numpy as np
+from boolexp import Expression
 
 
-def extract_operator_and_value(value):
-    operator_by_symbol = {
-        '<': np.less,
-        '<=': np.less_equal,
-        '>': np.greater,
-        '>=': np.greater_equal,
-        }
-    operators = operator_by_symbol.keys()
-    if isinstance(value, basestring) and any(operator in value for operator in operators):
-        operator_str, value = value.split(' ')
-        operator = operator_by_symbol[operator_str]
-        value = int(value)
-    else:
-        # Do not use np.equal here to deal with strings, np.equal returns NotImplemented with strings.
-        equal = lambda array, value: array.__eq__(value)
-        operator = equal
-    return operator, value
+item_to_singleton = make_item_to_singleton()
 
 
-validate_yaml_blocks = uniform_sequence(
-    struct(
-        {
-            'conditions': uniform_mapping(
-                noop,  # The variable name is not validated
-                function(extract_operator_and_value),
+def str_to_expression(value, state = None):
+    expression = value
+    if 'value' not in value:
+        operators = ('<', '<=', '>', '>=', '==')
+        if all(operator not in value for operator in operators):
+            if '"' not in value and "'" not in value:
+                expression = u'"{}"'.format(expression)
+            expression = u'== {}'.format(expression)
+        expression = u'value {}'.format(expression)
+    return Expression(expression), None
+
+
+def make_validate_yaml_tree(categories_produits, variable_names):
+    return pipe(
+        test_isinstance(list),
+        uniform_sequence(
+            struct(
+                {
+                    'conditions': pipe(
+                        test_isinstance(dict),
+                        uniform_mapping(
+                            pipe(
+                                test_isinstance(basestring),
+                                test_in(variable_names + ['categorie_produit']),
+                                ),
+                            pipe(
+                                test_isinstance(basestring),
+                                str_to_expression,
+                                ),
+                            ),
+                        ),
+                    'results': pipe(
+                        test_isinstance(dict),
+                        uniform_mapping(
+                            test_in(variable_names),
+                            test_isinstance(numbers.Real),
+                            ),
+                        ),
+                    },
                 ),
-            'results': uniform_mapping(
-                noop,  # The variable name is not validated
-                test_isinstance(numbers.Real),
+            ),
+        )
+
+
+validate_yaml_categories_produits = pipe(
+    test_isinstance(list),
+    uniform_sequence(
+        pipe(
+            test_isinstance(dict),
+            uniform_mapping(
+                test_isinstance(basestring),
+                pipe(
+                    test_isinstance(list),
+                    uniform_sequence(
+                        test_isinstance(basestring),
+                        ),
+                    ),
                 ),
-            },
+            ),
         ),
     )

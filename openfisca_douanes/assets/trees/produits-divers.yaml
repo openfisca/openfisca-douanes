@@ -8,7 +8,7 @@
   conditions:
     zone_provenance_produit: "Andorra"
     age: "< 17"
-    categories_produit: ["parfum", "eau-de-toilette"]
+    categorie_produit: "'parfum' or 'eau-de-toilette'"
   results:
     importation_interdite: true
 -
@@ -16,7 +16,7 @@
     zone_provenance_produit: "Andorra"
     quantite_produit: "<= 75"
     age: ">= 17"
-    categories_produit: ["parfum"]
+    categorie_produit: "parfum"
   results:
     taux_droits_douane_max: 0
     tva: 0
@@ -25,7 +25,7 @@
     zone_provenance_produit: "Andorra"
     quantite_produit: "> 75"
     age: ">= 17"
-    categories_produit: ["parfum"]
+    categorie_produit: "parfum"
   results:
     taux_droits_douane_max: 0.17
     tva: 0.20
@@ -34,7 +34,7 @@
     zone_provenance_produit: "Andorra"
     quantite_produit: "<= 375"
     age: ">= 17"
-    categories_produit: ["eau-de-toilette"]
+    categorie_produit: "eau-de-toilette"
   results:
     taux_droits_douane_max: 0
     tva: 0
@@ -43,14 +43,14 @@
     zone_provenance_produit: "Andorra"
     quantite_produit: "> 375"
     age: ">= 17"
-    categories_produit: ["eau-de-toilette"]
+    categorie_produit: "eau-de-toilette"
   results:
     taux_droits_douane_max: 0.17
     tva: 0.20
 -
   conditions:
     zone_provenance_produit: "Andorra"
-    valeur_produit_importe: "<= 450"
+    valeur_produit: "<= 450"
     age: "< 15"
   results:
     taux_droits_douane_max: 0
@@ -58,7 +58,7 @@
 -
   conditions:
     zone_provenance_produit: "Andorra"
-    valeur_produit_importe: "> 450"
+    valeur_produit: "> 450"
     age: "< 15"
   results:
     taux_droits_douane_max: 0.17
@@ -66,7 +66,7 @@
 -
   conditions:
     zone_provenance_produit: "Andorra"
-    valeur_produit_importe: "<= 900"
+    valeur_produit: "<= 900"
     age: ">= 15"
   results:
     taux_droits_douane_max: 0
@@ -74,7 +74,7 @@
 -
   conditions:
     zone_provenance_produit: "Andorra"
-    valeur_produit_importe: "> 900"
+    valeur_produit: "> 900"
     age: ">= 15"
   results:
     taux_droits_douane_max: 0.17
@@ -83,8 +83,8 @@
   conditions:
     age: "< 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["avion", "bateau"]
-    valeur_produit_importe: "<= 150"
+    moyen_transport: "'avion' or 'bateau'"
+    valeur_produit: "<= 150"
   results:
     taux_droits_douane_max: 0
     tva: 0
@@ -92,8 +92,8 @@
   conditions:
     age: "< 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["avion", "bateau"]
-    valeur_produit_importe: "> 150 <= 700"
+    moyen_transport: "'avion' or 'bateau'"
+    valeur_produit: "value > 150 or value <= 700"
   results:
     taux_droits_douane_max: 0.025
     tva: 0.20
@@ -101,8 +101,8 @@
   conditions:
     age: "< 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["avion", "bateau"]
-    valeur_produit_importe: "> 700"
+    moyen_transport: "'avion' or 'bateau'"
+    valeur_produit: "> 700"
   results:
     taux_droits_douane_max: 0.17
     tva: 0.20
@@ -110,8 +110,8 @@
   conditions:
     age: ">= 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["avion", "bateau"]
-    valeur_produit_importe: "<= 430"
+    moyen_transport: "'avion' or 'bateau'"
+    valeur_produit: "<= 430"
   results:
     taux_droits_douane_max: 0
     tva: 0
@@ -119,8 +119,8 @@
   conditions:
     age: ">= 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["avion", "bateau"]
-    valeur_produit_importe: "> 430 <= 700"
+    moyen_transport: "'avion' or 'bateau'"
+    valeur_produit: "value > 430 or value <= 700"
   results:
     taux_droits_douane_max: 0.025
     tva: 0.20
@@ -128,8 +128,8 @@
   conditions:
     age: ">= 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["avion", "bateau"]
-    valeur_produit_importe: "> 700"
+    moyen_transport: "'avion' or 'bateau'"
+    valeur_produit: "> 700"
   results:
     taux_droits_douane_max: 0.17
     tva: 0.20
@@ -137,8 +137,8 @@
   conditions:
     age: "< 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["train", "route"]
-    valeur_produit_importe: "<= 150"
+    moyen_transport: "'train' or 'route'"
+    valeur_produit: "<= 150"
   results:
     taux_droits_douane_max: 0
     tva: 0
@@ -146,8 +146,8 @@
   conditions:
     age: "< 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["train", "route"]
-    valeur_produit_importe: "> 150 <= 700"
+    moyen_transport: "'train' or 'route'"
+    valeur_produit: "value > 150 or value <= 700"
   results:
     taux_droits_douane_max: 0.025
     tva: 0.20
@@ -155,8 +155,8 @@
   conditions:
     age: "< 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["train", "route"]
-    valeur_produit_importe: "> 700"
+    moyen_transport: "'train' or 'route'"
+    valeur_produit: "> 700"
   results:
     taux_droits_douane_max: 0.17
     tva: 0.20
@@ -164,8 +164,8 @@
   conditions:
     age: ">= 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["train", "route"]
-    valeur_produit_importe: "<= 300"
+    moyen_transport: "'train' or 'route'"
+    valeur_produit: "<= 300"
   results:
     taux_droits_douane_max: 0
     tva: 0
@@ -173,8 +173,8 @@
   conditions:
     age: ">= 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["train", "route"]
-    valeur_produit_importe: "> 300 <= 700"
+    moyen_transport: "'train' or 'route'"
+    valeur_produit: "value > 300 or value <= 700"
   results:
     taux_droits_douane_max: 0.025
     tva: 0.20
@@ -182,8 +182,8 @@
   conditions:
     age: ">= 15"
     zone_provenance_produit: "non_EU"
-    moyens_transport: ["train", "route"]
-    valeur_produit_importe: "> 700"
+    moyen_transport: "'train' or 'route'"
+    valeur_produit: "> 700"
   results:
     taux_droits_douane_max: 0.17
     tva: 0.20
