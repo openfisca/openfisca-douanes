@@ -14,9 +14,6 @@ clean-pyc:
 clean-svg:
 	rm -f $(SVG_FILES)
 
-download_pad:
-	wget https://bimestriel.framapad.org/p/openfisca-douanes/export/markdown -O notes/openfisca-douanes-pad-backup.md
-
 test:
 	nosetests -x openfisca_douanes/tests
 
