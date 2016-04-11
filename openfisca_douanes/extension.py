@@ -27,25 +27,13 @@ def match_conditions(yaml_blocks, simulation, period):
                 )
             for variable_name in yaml_block['conditions']
             }
-        for variable_name, condition_expression in yaml_block['conditions'].iteritems():
-            for value in simulation_value_by_variable_name[variable_name]:
-                result = condition_expression.evaluate({'value': value})
-
-                # import ipdb; ipdb.set_trace()
-
-        conditions = [
-            all(condition_expression.evaluate({'value': value}))
-            for value in simulation_value_by_variable_name[variable_name]
+        match = all(
+            condition_expression.evaluate({'value': value})
             for variable_name, condition_expression in yaml_block['conditions'].iteritems()
-            ]
-        print simulation_value_by_variable_name
-        print yaml_block['conditions']
-        print conditions
-        import ipdb; ipdb.set_trace()
-        if all(conditions):
-            # print '===== match', yaml_block
+            for value in simulation_value_by_variable_name[variable_name]
+            )
+        if match:
             return yaml_block
-    # print '---- no match'
     return None
 
 
